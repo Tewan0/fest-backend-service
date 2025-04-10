@@ -10,8 +10,7 @@ route.post('/', userController.uploadUser, userController.createUser);
 route.get('/:userName/:userPassword', userController.checkLogin);
 //แก้ไข ใช้ PUT
 route.put('/:userId', userController.uploadUser, userController.updateUser);
-//ลบ ใช้ DELETE
-route.delete('/:userId', userController.deleteUser);
+
 
 
 module.exports = route;
