@@ -23,12 +23,12 @@ model user_tb {
 }
 
 model fest_tb {
-  festId        Int       @id @default(autoincrement())
-  festName      String    @db.VarChar(150)
-  festDetail    String 
-  festState     String   
-  festNumDate   Int 
-  festCost      Float
+  festId        Int      @id @default(autoincrement())
+  festName      String   @db.VarChar(150)
+  festDetail    String   @db.VarChar(191)
+  festState     String   @db.VarChar(191) 
+  festCost      Float    @db.Double
+  festNumDay    Int
   userId        Int
-  festImage     String    @db.VarChar(150)
+  festImage     String   @db.VarChar(150)
 }
